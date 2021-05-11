@@ -1,12 +1,11 @@
 #Operdores condicionaas e lógicos:
-nota1 = int(input('Primeiro bimestre: '))
-nota2 = int(input('Segundo bimestre: '))
-nota3 = int(input('Terceiro bimestre: '))
-nota4 = int(input('Quarto bimestre: '))
+d = int(input('Entre com o primeiro valor'))
+e = int(input('Entre com o segundo valor'))
 
-media = (nota1 + nota2 + nota3+ nota4) / 4
-if nota1 <= 10 and nota2 <= 10 and nota3 <= 10 and nota4 <= 10:
-    print('Média: {}'.format(media))
+resto_a = d % 2
+resto_b = e % 2
+
+if resto_a == 0 or not resto_b > 0:
+    print('Foi digitado um número par')
 else:
-    print('foi informada alguma nota errada')
-
+    print('Nenhum número é par')

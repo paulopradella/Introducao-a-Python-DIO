@@ -1,11 +1,13 @@
 #Operdores condicionaas e lógicos:
-d = int(input('Entre com o primeiro valor'))
-e = int(input('Entre com o segundo valor'))
+a = int(input('Primeiro valor'))
+b = int(input('Segundo valor'))
+c = int(input('Terceiro valor'))
 
-resto_a = d % 2
-resto_b = e % 2
-
-if resto_a == 0 or not resto_b > 0:
-    print('Foi digitado um número par')
+if a > b and a > c:
+    print('O maior número é {}'. format(a))
+elif b > a and b > c:
+    print('O maior número é {}'.format(b))
 else:
-    print('Nenhum número é par')
+    print('O maior número é {}'.format(c))
+print('Final do programa')
+

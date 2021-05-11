@@ -1,16 +1,12 @@
 #Operdores condicionaas e lógicos:
-primeira = int(input('Primeiro bimestre: '))
-if primeira > 10:
-    primeira = int(input('Você digitou errado. Primeiro bimestre: '))
-segunda = int(input('Segundo bimestre: '))
-if segunda > 10:
-    segunda = int(input('Você digitou errado. Segundo bimestre: '))
-terceira = int(input('Terceiro bimestre: '))
-if terceira > 10:
-    terceira = int(input('Você digitou errado. Terceiro bimestre: '))
-quarta = int(input('Quarto bimestre: '))
-if quarta > 10:
-    quarta = int(input('Você digitou errado. Quarto bimestre: '))
-media1 = (primeira + segunda + terceira + quarta) / 4
+nota1 = int(input('Primeiro bimestre: '))
+nota2 = int(input('Segundo bimestre: '))
+nota3 = int(input('Terceiro bimestre: '))
+nota4 = int(input('Quarto bimestre: '))
 
-print('Média: {}'.format(media1))
+media = (nota1 + nota2 + nota3+ nota4) / 4
+if nota1 <= 10 and nota2 <= 10 and nota3 <= 10 and nota4 <= 10:
+    print('Média: {}'.format(media))
+else:
+    print('foi informada alguma nota errada')
+
